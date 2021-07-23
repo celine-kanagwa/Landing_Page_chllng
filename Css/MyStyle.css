@@ -445,6 +445,7 @@
 
     .mobilenav ul .signup{
         margin-bottom: 0;
+        display: block;
     }
 
     .mobilenav ul .signup a{
@@ -462,6 +463,7 @@
     }
     .mobilenav ul .login {
         margin-bottom: 0;
+        display: block;
     }
 
     .mobilenav ul .login  a{
@@ -582,24 +584,19 @@
     .sec-three{
         position: absolute;
         display: flex;
-        flex-wrap: wrap;
+       
         width: 100%;
       }
     .sec-three .sec-right-right{
-        flex-basis: 100%;
-        order: 2;
         text-align: center;
         margin-bottom: 3rem;
-        width: 40%
+        margin-right: -13em;   
     }
     .sec-three .sec-three-left{
-        flex-basis: 100%;
         text-align: center;
         margin-bottom: 3rem;
         margin-top: -2em;
-        margin-left: 13em;
-        width: 50%;
-    
+        margin-left: 15em;
     }
     .sec-three .sec-three-left .laptop-desktop{
         display:none;
@@ -615,12 +612,143 @@
     text-align:center;
     font-family: 'Overpass', sans-serif;
     font-weight: 700;
+    margin-top: 4em;
+    left: 15em;
+  
     }
     .sec-three-right p{
         font-size: 1.2rem;
         font-family: 'Overpass', sans-serif;
         font-weight: 300;
+        left: 15em;
     }
+    .footer{
+        width: 100%;
+        height: 70vh;
+        position: absolute;
+        background-position:center;
+        background-size: 150%;
+        padding: 2rem 10rem;
+        background-repeat: no-repeat;
+        background-color:black;
+        border-bottom-left-radius: 100px;
+        border-top-right-radius: 100px;
+    }
+    .footer .navigation{
+    display: flex;
+    align-items:center;
+}
+
+.footer .navigation .site-nav{
+    flex: 1;
+    margin-left: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer .navigation .site-nav li{
+    margin-right: 1.5rem;
+    list-style: none;
+    position: relative;
+}
+
+.footer .navigation .site-nav li a{
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+    transition: 1s;
+    font-family: 'Ubuntu', sans-serif;
+   
+}
+
+/*.footer .navigation .site-nav li a:hover{
+    text-decoration: underline;
+}*/
+
+.footer .navigation .site-nav li img{
+    margin-left: .5rem;
+    transition: .5s;
+}
+
+.footer .navigation .site-nav li:hover img{
+    transform: rotate(-180deg);
+}
+
+.footer .navigation .site-nav li .dropdown-menu{
+    display: block;
+    transition: .5s;
+    
+    
+}
+
+/*.footer .navigation .site-nav li:hover .dropdown-menu{
+    display: block;
+}*/
+
+.footer .navigation .site-nav li .dropdown-menu0 ul{
+    position:absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+.footer .navigation .site-nav li .dropdown-menu1 ul{
+    position:absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+.footer .navigation .site-nav li .dropdown-menu2 ul{
+    position:absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+
+.footer .navigation .site-nav li .dropdown-menu0 ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+   
+}
+.footer .navigation .site-nav li .dropdown-menu1 ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left:2rem;
+    margin-top: 1rem;
+
+}
+.footer .navigation .site-nav li .dropdown-menu2 ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left:2rem;
+    margin-top: 1rem;
+
+
+}
+.footer .navigation .site-nav li .dropdown-menu ul li:last-child{
+    margin-bottom: 0;
+}
+
+.footer .navigation .site-nav li .dropdown-menu ul li a{
+    color: hsl(240, 0%, 56%);
+    transition: .5s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.footer .navigation .site-nav li .dropdown-menu0 .dropdown-menu1 .dropdown-menu2 ul li a:hover{
+    color: hsl(0, 0%, 5%);
+}
+ 
 }
 
 
@@ -632,7 +760,6 @@
     height: 70vh;
     position: relative;
     background-position:center;
-    background-position: right -550px bottom -800px;
     background-size: 150%;
     padding: 2rem 10rem;
     border-bottom-left-radius: 100px;
@@ -728,9 +855,9 @@
 
 .footer{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
+    margin-top: 50%;
     position: absolute;
-    margin-top:50%;
     background-position:center;
     background-size: 150%;
     padding: 2rem 10rem;
@@ -764,14 +891,15 @@
     cursor: pointer;
     transition: 1s;
     font-family: 'Ubuntu', sans-serif;
+   
 }
 
-.footer .navigation .site-nav li a:hover{
+/*.footer .navigation .site-nav li a:hover{
     text-decoration: underline;
-}
+}*/
 
 .footer .navigation .site-nav li img{
-    margin-left: .5rem;
+    margin-left: -2rem;
     transition: .5s;
 }
 
@@ -783,15 +911,34 @@
     display: block;
     transition: .5s;
     
+    
 }
 
-.footer .navigation .site-nav li:hover .dropdown-menu{
+/*.footer .navigation .site-nav li:hover .dropdown-menu{
     display: block;
-}
+}*/
 
-.footer .navigation .site-nav li .dropdown-menu ul{
-    position: absolute;
-    margin-top: .2rem;
+.footer .navigation .site-nav li .dropdown-menu0 ul{
+    position:absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+.footer .navigation .site-nav li .dropdown-menu1 ul{
+    position:absolute;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    padding: 1.5rem;
+    text-align: left;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
+}
+.footer .navigation .site-nav li .dropdown-menu2 ul{
+    position:absolute;
+    margin-top: -2rem;
     margin-left: -2rem;
     padding: 1.5rem;
     text-align: left;
@@ -799,11 +946,27 @@
     box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.4);
 }
 
-.footer .navigation .site-nav li .dropdown-menu ul li{
+.footer .navigation .site-nav li .dropdown-menu0 ul li{
     display: block;
     margin-bottom: 1rem;
+    margin-top: 1rem;
+   
 }
+.footer .navigation .site-nav li .dropdown-menu1 ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left:2rem;
+    margin-top: 1rem;
 
+}
+.footer .navigation .site-nav li .dropdown-menu2 ul li{
+    display: block;
+    margin-bottom: 1rem;
+    margin-left:2rem;
+    margin-top: 1rem;
+
+
+}
 .footer .navigation .site-nav li .dropdown-menu ul li:last-child{
     margin-bottom: 0;
 }
@@ -815,7 +978,7 @@
     text-decoration: none;
 }
 
-.footer .navigation .site-nav li .dropdown-menu ul li a:hover{
+.footer .navigation .site-nav li .dropdown-menu0 .dropdown-menu1 .dropdown-menu2 ul li a:hover{
     color: hsl(0, 0%, 5%);
 }
  
